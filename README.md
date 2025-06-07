@@ -17,6 +17,7 @@ This branch contains the work focused on analyzing customer reviews of mobile ba
 - 📈 **Exploratory Data Analysis (EDA)**  
   Perform initial data cleaning and visualization to understand the distribution and patterns of reviews.
 
+<<<<<<< task-2
 ---
 
 ## 🛠️ Tools & Libraries
@@ -70,5 +71,11 @@ Thanks for checking out this branch! 🙌 Feel free to contribute or raise issue
 ---
 
 Author
+<<<<<<< HEAD
+=======
+=======
+👨‍💻 Author
+>>>>>>> main
+>>>>>>> 8a3bd33 (Add detailed README for Task 2 - Sentiment and Thematic Analysis)
 
 Dagmawit Andargachew
