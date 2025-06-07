@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mobile Banking App Reviews Analysis
 
 ## Task 1: Data Collection and Preprocessing
@@ -39,3 +40,6 @@ Scrape user reviews from Google Play Store for three Ethiopian bank mobile apps 
 
 ---
 
+=======
+# mobile-banking-review-analysis
+>>>>>>> cd9880d612838e373f4c5289662f9dc018220a52
