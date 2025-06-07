@@ -1,25 +1,41 @@
-# Mobile Banking Review Analysis
+# Mobile Banking App Reviews Analysis
 
-This project analyzes user satisfaction with mobile banking apps of three Ethiopian banks using reviews from the Google Play Store.
+## Task 1: Data Collection and Preprocessing
 
-## Objectives
+### Objective
+Scrape user reviews from Google Play Store for three Ethiopian bank mobile apps and preprocess the data for further analysis.
 
-- Scrape 400+ reviews per bank using `google-play-scraper`
-- Clean and preprocess review data
-- Prepare the data for sentiment analysis and visualization
+### Methodology
 
-## Folder Structure
+- **Scraping:**  
+  Used the `google-play-scraper` Python package to collect user reviews, ratings, and review dates for the following bank apps:  
+  - CBE: `com.combanketh.mobilebanking`  
+  - BOA: `com.boa.boaMobileBanking`  
+  - Dashen Bank: `com.dashen.dashensuperapp`  
 
-- `data/`: raw and cleaned CSV files
-- `scripts/`: scraping and preprocessing scripts
-- `notebooks/`: optional notebooks for analysis
+- **Data Collection:**  
+  Targeted a minimum of 400 reviews per app, resulting in over 1200 reviews in total.
 
-## Bank Package IDs
+- **Preprocessing:**  
+  - Converted the scraped data into pandas DataFrames.  
+  - Selected relevant columns: review text, rating, date, bank name, and source.  
+  - Cleaned review texts by trimming whitespace and handling missing or non-string entries.  
+  - Removed duplicate reviews to ensure data quality.  
+  - Dropped rows with missing reviews or ratings.  
+  - Normalized dates to the `YYYY-MM-DD` format for consistency.  
+  - Saved cleaned individual CSV files per bank and a combined CSV file for all banks.
 
-- CBE: `com.combanketh.mobilebanking`
-- BOA: `com.boa.boaMobileBanking`
-- Dashen: `com.dashen.dashensuperapp`
+### Results
 
-## Usage
+- Successfully collected and cleaned 400 reviews per bank app.  
+- Generated clean CSV files ready for exploratory data analysis.
 
-Run `scrape_reviews.py` to collect data and `preprocess_reviews.py` to clean it.
+---
+
+## How to Run the Scripts
+
+- Install dependencies using `pip install -r requirements.txt`.  
+- Run the scraping and preprocessing script: `python scrape_and_preprocess.py`.
+
+---
+
