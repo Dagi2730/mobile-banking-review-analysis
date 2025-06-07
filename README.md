@@ -17,7 +17,6 @@ This branch contains the work focused on analyzing customer reviews of mobile ba
 - 📈 **Exploratory Data Analysis (EDA)**  
   Perform initial data cleaning and visualization to understand the distribution and patterns of reviews.
 
-<<<<<<< task-2
 ---
 
 ## 🛠️ Tools & Libraries
@@ -58,24 +57,5 @@ README.md                       ← This file
 
 ---
 
-## 📌 Notes
 
-- Due to data privacy and size constraints, raw data files might not be included here. Please contact the project maintainer for access.
-- Sentiment model uses a maximum sequence length of 512 tokens for efficiency.
-- Further enhancements planned: theme clustering, dashboard visualization, and integration with other project tasks.
 
----
-
-Thanks for checking out this branch! 🙌 Feel free to contribute or raise issues if you find anything.
-
----
-
-Author
-<<<<<<< HEAD
-=======
-=======
-👨‍💻 Author
->>>>>>> main
->>>>>>> 8a3bd33 (Add detailed README for Task 2 - Sentiment and Thematic Analysis)
-
-Dagmawit Andargachew
