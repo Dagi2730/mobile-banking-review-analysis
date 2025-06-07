@@ -35,7 +35,6 @@ Scrape user reviews from Google Play Store for three Ethiopian bank mobile apps 
 ## How to Run the Scripts
 
 - Install dependencies using `pip install -r requirements.txt`.  
-- Run the scraping and preprocessing script: `python scrape_and_preprocess.py`.
 
 ---
 
