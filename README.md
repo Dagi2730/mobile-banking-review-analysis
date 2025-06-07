@@ -26,5 +26,6 @@ This project is part of the Omega Consultancy Challenge Week 2, aimed at analyzi
 - **Oracle Database** (via cx_Oracle)
 - **Streamlit** (for dashboard – optional)
 
-👨‍💻 Authors
+👨‍💻 Author
+
 Dagmawit Andargachew
