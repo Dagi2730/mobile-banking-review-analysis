@@ -1,45 +1,30 @@
-<<<<<<< HEAD
-# Mobile Banking App Reviews Analysis
+# 📱 Mobile Banking Review Analysis
 
-## Task 1: Data Collection and Preprocessing
+This project is part of the Omega Consultancy Challenge Week 2, aimed at analyzing customer reviews from the Google Play Store for mobile banking apps of three major Ethiopian banks: **Commercial Bank of Ethiopia (CBE)**, **Dashen Bank**, and **Bank of Abyssinia (BoA)**.
 
-### Objective
-Scrape user reviews from Google Play Store for three Ethiopian bank mobile apps and preprocess the data for further analysis.
+## 🚀 Objectives
 
-### Methodology
+- Scrape user reviews from the Google Play Store for selected banking apps.
+- Perform Natural Language Processing (NLP) and sentiment analysis on the reviews.
+- Store and manage data using Oracle databases.
+- Generate visual and statistical insights for stakeholder reporting.
 
-- **Scraping:**  
-  Used the `google-play-scraper` Python package to collect user reviews, ratings, and review dates for the following bank apps:  
-  - CBE: `com.combanketh.mobilebanking`  
-  - BOA: `com.boa.boaMobileBanking`  
-  - Dashen Bank: `com.dashen.dashensuperapp`  
+## 🏦 Analyzed Banks & Package IDs
 
-- **Data Collection:**  
-  Targeted a minimum of 400 reviews per app, resulting in over 1200 reviews in total.
+| Bank Name               | App Package Name                      |
+|------------------------|---------------------------------------|
+| Commercial Bank of Ethiopia (CBE) | `com.combanketh.mobilebanking` |
+| Dashen Bank            | `com.dashen.dashensuperapp`          |
+| Bank of Abyssinia (BoA)| `com.boa.boaMobileBanking`           |
 
-- **Preprocessing:**  
-  - Converted the scraped data into pandas DataFrames.  
-  - Selected relevant columns: review text, rating, date, bank name, and source.  
-  - Cleaned review texts by trimming whitespace and handling missing or non-string entries.  
-  - Removed duplicate reviews to ensure data quality.  
-  - Dropped rows with missing reviews or ratings.  
-  - Normalized dates to the `YYYY-MM-DD` format for consistency.  
-  - Saved cleaned individual CSV files per bank and a combined CSV file for all banks.
+## 🧪 Technologies Used
 
-### Results
+- **Python**
+- **Google Play Scraper** (`google-play-scraper`, `google_play_scraper`)
+- **Pandas**, **Matplotlib**, **Seaborn**, **WordCloud**
+- **NLTK**, **TextBlob** for NLP and sentiment analysis
+- **Oracle Database** (via cx_Oracle)
+- **Streamlit** (for dashboard – optional)
 
-- Successfully collected and cleaned 400 reviews per bank app.  
-- Generated clean CSV files ready for exploratory data analysis.
-
----
-
-## How to Run the Scripts
-
-- Install dependencies using `pip install -r requirements.txt`.  
-- Run the scraping and preprocessing script: `python scrape_and_preprocess.py`.
-
----
-
-=======
-# mobile-banking-review-analysis
->>>>>>> cd9880d612838e373f4c5289662f9dc018220a52
+👨‍💻 Authors
+Dagmawit Andargachew
