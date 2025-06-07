@@ -1,30 +1,29 @@
-# 📱 Mobile Banking Review Analysis
+# 📊 Task 2 - Sentiment and Thematic Analysis
 
-This project is part of the Omega Consultancy Challenge Week 2, aimed at analyzing customer reviews from the Google Play Store for mobile banking apps of three major Ethiopian banks: **Commercial Bank of Ethiopia (CBE)**, **Dashen Bank**, and **Bank of Abyssinia (BoA)**.
+Welcome to the **Task 2** branch of the **mobile-banking-review-analysis** project! 🚀
 
-## 🚀 Objectives
+This branch contains the work focused on analyzing customer reviews of mobile banking apps using Natural Language Processing (NLP) techniques. The main goal is to extract valuable insights about user sentiment and common themes from the reviews.
 
-- Scrape user reviews from the Google Play Store for selected banking apps.
-- Perform Natural Language Processing (NLP) and sentiment analysis on the reviews.
-- Store and manage data using Oracle databases.
-- Generate visual and statistical insights for stakeholder reporting.
+---
 
-## 🏦 Analyzed Banks & Package IDs
+## 🎯 Objectives
 
-| Bank Name               | App Package Name                      |
-|------------------------|---------------------------------------|
-| Commercial Bank of Ethiopia (CBE) | `com.combanketh.mobilebanking` |
-| Dashen Bank            | `com.dashen.dashensuperapp`          |
-| Bank of Abyssinia (BoA)| `com.boa.boaMobileBanking`           |
+- 🔍 **Sentiment Analysis**  
+  Use pretrained models (e.g., DistilBERT fine-tuned on SST-2) to classify reviews as Positive or Negative and assign confidence scores.
 
-## 🧪 Technologies Used
+- 🗂️ **Thematic Analysis**  
+  Extract key topics and keywords from reviews to identify common themes and user concerns.
 
-- **Python**
-- **Google Play Scraper** (`google-play-scraper`, `google_play_scraper`)
-- **Pandas**, **Matplotlib**, **Seaborn**, **WordCloud**
-- **NLTK**, **TextBlob** for NLP and sentiment analysis
-- **Oracle Database** (via cx_Oracle)
-- **Streamlit** (for dashboard – optional)
+- 📈 **Exploratory Data Analysis (EDA)**  
+  Perform initial data cleaning and visualization to understand the distribution and patterns of reviews.
 
-👨‍💻 Authors
-Dagmawit Andargachew
+---
+
+## 🛠️ Tools & Libraries
+
+- `transformers` (Hugging Face) for sentiment classification  
+- `pandas` for data manipulation  
+- NLP libraries like `spaCy`, `scikit-learn`, or `nltk` for keyword extraction and text processing  
+- Visualization tools (e.g., `matplotlib`, `seaborn`) for EDA plots
+
+---
