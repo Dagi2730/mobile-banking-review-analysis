@@ -1,31 +1,40 @@
 # 📱 Mobile Banking Review Analysis
 
-This project is part of the Omega Consultancy Challenge Week 2, aimed at analyzing customer reviews from the Google Play Store for mobile banking apps of three major Ethiopian banks: **Commercial Bank of Ethiopia (CBE)**, **Dashen Bank**, and **Bank of Abyssinia (BoA)**.
+This project is developed as part of the **Omega Consultancy Challenge – Week 2**, with the goal of extracting actionable insights from user-generated feedback on the mobile banking apps of three prominent Ethiopian banks. By leveraging advanced data analytics and Natural Language Processing (NLP) techniques, the project aims to support financial institutions in enhancing their digital banking experiences.
 
-## 🚀 Objectives
+---
 
-- Scrape user reviews from the Google Play Store for selected banking apps.
-- Perform Natural Language Processing (NLP) and sentiment analysis on the reviews.
-- Store and manage data using Oracle databases.
-- Generate visual and statistical insights for stakeholder reporting.
+## 🚀 Project Objectives
 
-## 🏦 Analyzed Banks & Package IDs
+- 🔍 **Scrape** real-time user reviews from the Google Play Store for selected mobile banking applications.
+- 🧠 **Analyze** user sentiment and extract thematic trends using NLP techniques.
+- 💾 **Store** cleaned and enriched review data in an **Oracle-compatible** format for scalable enterprise usage.
+- 📊 **Generate** interactive visual and statistical insights to aid decision-making by marketing, engineering, and customer support teams.
+- 🎯 **Identify** key pain points and satisfaction drivers to improve app performance, user experience, and retention.
 
-| Bank Name               | App Package Name                      |
-|------------------------|---------------------------------------|
-| Commercial Bank of Ethiopia (CBE) | `com.combanketh.mobilebanking` |
-| Dashen Bank            | `com.dashen.dashensuperapp`          |
-| Bank of Abyssinia (BoA)| `com.boa.boaMobileBanking`           |
+---
 
-## 🧪 Technologies Used
+## 🏦 Analyzed Banks & App Package IDs
 
-- **Python**
-- **Google Play Scraper** (`google-play-scraper`, `google_play_scraper`)
-- **Pandas**, **Matplotlib**, **Seaborn**, **WordCloud**
-- **NLTK**, **TextBlob** for NLP and sentiment analysis
-- **Oracle Database** (via cx_Oracle)
-- **Streamlit** (for dashboard – optional)
+| Bank Name                          | App Package Name                      |
+|-----------------------------------|---------------------------------------|
+| **Commercial Bank of Ethiopia (CBE)** | `com.combanketh.mobilebanking`         |
+| **Dashen Bank**                   | `com.dashen.dashensuperapp`           |
+| **Bank of Abyssinia (BoA)**       | `com.boa.boaMobileBanking`            |
 
-👨‍💻 Author
+---
 
-Dagmawit Andargachew
+## 🧪 Technologies & Tools Used
+
+- 💻 **Programming Language:** Python  
+- 🔎 **Web Scraping:** `google_play_scraper`, `google-play-scraper`  
+- 📊 **Data Handling & Visualization:** `Pandas`, `Matplotlib`, `Seaborn`, `WordCloud`  
+- 🧠 **Natural Language Processing (NLP):** `TextBlob`, `NLTK`  
+- 🗄️ **Database Integration:** `cx_Oracle` for Oracle-compatible data storage  
+- 🌐 **Interactive Dashboard (Optional):** `Streamlit` for real-time insights  
+
+---
+
+## 👨‍💻 Author
+
+**Dagmawit Andargachew**  
