@@ -1,61 +1,60 @@
-📊 Task 2 - Sentiment and Thematic Analysis
+# 📊 Task 4 – Exploratory Data Analysis (EDA) and Sentiment Visualization
 
-Welcome to the **Task 2** branch of the **mobile-banking-review-analysis** project! 🚀
+## ✅ Objective
 
-This branch contains the work focused on analyzing customer reviews of mobile banking apps using Natural Language Processing (NLP) techniques. The main goal is to extract valuable insights about user sentiment and common themes from the reviews.
+This task focuses on performing Exploratory Data Analysis (EDA) and visualizations on cleaned and sentiment-annotated user reviews of mobile banking apps from three major Ethiopian banks:
+- Bank of Abyssinia (BoA)
+- Commercial Bank of Ethiopia (CBE)
+- Dashen Bank
 
----
-
-## 🎯 Objectives
-
-- 🔍 **Sentiment Analysis**  
-  Use pretrained models (e.g., DistilBERT fine-tuned on SST-2) to classify reviews as Positive or Negative and assign confidence scores.
-
-- 🗂️ **Thematic Analysis**  
-  Extract key topics and keywords from reviews to identify common themes and user concerns.
-
-- 📈 **Exploratory Data Analysis (EDA)**  
-  Perform initial data cleaning and visualization to understand the distribution and patterns of reviews.
+The goal is to extract insights into the sentiment trends, review characteristics, and comparative performance of each bank based on customer feedback.
 
 ---
 
-## 🛠️ Tools & Libraries
+## 📁 Data Used
 
-- \`transformers\` (Hugging Face) for sentiment classification  
-- \`pandas\` for data manipulation  
-- NLP libraries like \`spaCy\`, \`scikit-learn\`, or \`nltk\` for keyword extraction and text processing  
-- Visualization tools (e.g., \`matplotlib\`, \`seaborn\`) for EDA plots
+Processed review datasets with sentiment scores were used from the `data/processed/` directory:
+- `boa_reviews_sentiment.csv`
+- `cbe_reviews_sentiment.csv`
+- `dashen_reviews_sentiment.csv`
 
----
-
-## 📁 Repository Structure (relevant to this branch)
-
-\`\`\`
-/notebooks/
-   /data/
-      sentiment_analysis.ipynb    ← Jupyter notebook containing analysis code
-README.md                       ← This file
-\`\`\`
+Each dataset includes:
+- Original and cleaned review text
+- Sentiment polarity score (from VADER)
+- Sentiment classification (`positive`, `neutral`, `negative`)
+- Review length and associated metadata
 
 ---
 
-## ⚙️ How to Run
+## 📊 Visualizations Performed
 
-1. Clone the repo and checkout the \`task-2\` branch:
-   \`\`\`bash
-   git clone https://github.com/Dagi2730/mobile-banking-review-analysis.git
-   cd mobile-banking-review-analysis
-   git checkout task-2
-   \`\`\`
+1. ### Sentiment Score Distribution per Bank (Boxplot)
+   - Compares the spread and concentration of sentiment scores across banks.
 
-2. Install required dependencies:
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
+2. ### Sentiment Class Distribution (Count Plot)
+   - Shows the number of positive, neutral, and negative reviews per bank.
 
-3. Run the notebook \`notebooks/data/sentiment_analysis.ipynb\` in Jupyter or VSCode to reproduce the analysis.
+3. ### Review Length Distribution (Histogram)
+   - Analyzes the distribution of review lengths to understand how detailed user feedback tends to be.
+
+4. ### Sentiment vs. Review Length (Scatter Plot)
+   - Investigates whether longer reviews are more positive or negative.
+
+5. ### Average Sentiment per Bank (Bar Plot)
+   - Compares the average sentiment polarity score for each bank.
 
 ---
 
+## 🔍 Key Insights
 
+- **CBE** has the highest average sentiment score, indicating generally more favorable reviews.
+- **Dashen** and **BoA** have a wider spread in sentiment, suggesting more variability in customer experience.
+- **Longer reviews** are often associated with more negative sentiment, pointing to detailed complaints or user frustration.
+- Positive reviews dominate across all banks, but **Dashen** shows slightly more negative feedback.
+
+---
+
+## 📓 Notebook
+
+All analyses and visualizations are contained in the notebook:
 
