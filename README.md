@@ -1,61 +1,40 @@
-📊 Task 2 - Sentiment and Thematic Analysis
+# 🚀 Task 3: Oracle Storage - Mobile Banking Reviews
 
-Welcome to the **Task 2** branch of the **mobile-banking-review-analysis** project! 🚀
+## 📋 Overview
+This task focuses on inserting **cleaned mobile banking app reviews** from CSV files into an **Oracle database**.  
 
-This branch contains the work focused on analyzing customer reviews of mobile banking apps using Natural Language Processing (NLP) techniques. The main goal is to extract valuable insights about user sentiment and common themes from the reviews.
+The data is organized into two main tables:  
+- 🏦 **banks**: stores bank details (name, app package)  
+- 📝 **reviews**: stores individual reviews linked to banks, including review text, rating, sentiment, keywords, and themes
 
----
-
-## 🎯 Objectives
-
-- 🔍 **Sentiment Analysis**  
-  Use pretrained models (e.g., DistilBERT fine-tuned on SST-2) to classify reviews as Positive or Negative and assign confidence scores.
-
-- 🗂️ **Thematic Analysis**  
-  Extract key topics and keywords from reviews to identify common themes and user concerns.
-
-- 📈 **Exploratory Data Analysis (EDA)**  
-  Perform initial data cleaning and visualization to understand the distribution and patterns of reviews.
+The script reads cleaned CSV files for each bank and inserts their review data into the database.
 
 ---
 
-## 🛠️ Tools & Libraries
+## 📁 File Structure
 
-- \`transformers\` (Hugging Face) for sentiment classification  
-- \`pandas\` for data manipulation  
-- NLP libraries like \`spaCy\`, \`scikit-learn\`, or \`nltk\` for keyword extraction and text processing  
-- Visualization tools (e.g., \`matplotlib\`, \`seaborn\`) for EDA plots
-
----
-
-## 📁 Repository Structure (relevant to this branch)
-
-\`\`\`
-/notebooks/
-   /data/
-      sentiment_analysis.ipynb    ← Jupyter notebook containing analysis code
-README.md                       ← This file
-\`\`\`
+- `insert_cleaned_reviews.py` — Python script to load CSV files and insert data into Oracle  
+- `notebook/data/` — Folder containing cleaned review CSVs for each bank:  
+  - `boa_reviews_cleaned.csv`  
+  - `dashen_reviews_cleaned.csv`  
+  - `cbe_reviews_cleaned.csv`  
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ Prerequisites
 
-1. Clone the repo and checkout the \`task-2\` branch:
-   \`\`\`bash
-   git clone https://github.com/Dagi2730/mobile-banking-review-analysis.git
-   cd mobile-banking-review-analysis
-   git checkout task-2
-   \`\`\`
-
-2. Install required dependencies:
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
-
-3. Run the notebook \`notebooks/data/sentiment_analysis.ipynb\` in Jupyter or VSCode to reproduce the analysis.
+- Oracle Database up and running  
+- Python package `cx_Oracle` installed (`pip install cx_Oracle`)  
+- Oracle Instant Client installed and configured  
+- Python 3.7+  
 
 ---
 
+## 🚦 Usage Instructions
 
+1. Update Oracle DB credentials & DSN in `insert_cleaned_reviews.py`:
 
+   ```python
+   username = "bank_reviews"
+   password = "Dagi2730"
+   dsn = cx_Oracle.makedsn("localhost", 1521, service_name="XEPDB1")
