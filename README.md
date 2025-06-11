@@ -1,3 +1,4 @@
+# Mobile Banking App Reviews Analysis
 📊 Task 2 - Sentiment and Thematic Analysis
 
 Welcome to the **Task 2** branch of the **mobile-banking-review-analysis** project! 🚀
